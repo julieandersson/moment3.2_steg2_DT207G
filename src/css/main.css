@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Allmän styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Styling för header */
+header {
+    background-color: #6b9ac4;
+    padding: 12px 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Styling för main */
+main {
+    width: 85%;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Sektioner */
+section {
+    width: 100%;
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+section p {
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    margin: 12px 0;
+    max-width: 80ch;
+    line-height: 1.8em;
+}
+
+/* NAV meny */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 18px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3b6178; 
+}
+
+/* Rubriker */
+h1, h2 {
+    text-align: center;
+    margin: 22px 0;
+}
+
+/* Styling för footer */
+footer {
+    background-color: #6b9ac4;
+    padding: 12px 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+/* Styling för startsidan där listan med arbetserfarenheter skrivs ut som i "block" */
+ul#work-experience-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling för varje arbetserfarenhets "block" */
+ul#work-experience-list li {
+    background-color: #d6e6f2; 
+    margin-bottom: 22px;
+    padding: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #6b9ac4;
+}
+
+ul#work-experience-list li strong {
+    color: #333; 
+    font-size: 1.2em;
+}
+
+ul#work-experience-list li br {
+    margin-bottom: 12px;
+}
+
+/* Styling för formulär på lägg till-sidan */
+form#add-experience-form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #d6e6f2;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #6b9ac4;
+}
+
+/* Styling för etiketterna */
+form#add-experience-form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.05em;
+    margin-bottom: 6px;
+}
+
+/* Styling för textfält och datumfält */
+form#add-experience-form input[type="text"],
+form#add-experience-form input[type="date"],
+form#add-experience-form textarea {
+    padding: 12px;
+    border: 1px solid #6b9ac4; 
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling för textarea */
+form#add-experience-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Styling för submit-knappen */
+form#add-experience-form button {
+    padding: 12px;
+    background-color: #6b9ac4;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form#add-experience-form button:hover {
+    background-color: #5585b1; 
+}
+
+/* Styling för felmeddelanden */
+#error-message {
+    color: #d9534f;
+    background-color: #f9d6d5;
+    padding: 12px;
+    border: 1px solid #d9534f;
+    border-radius: 6px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+/* Styling för bekräftelsemeddelanden */
+#success-message {
+    color: #5cb85c;
+    background-color: #dff0d8;
+    padding: 12px;
+    border: 1px solid #5cb85c;
+    border-radius: 6px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+/* Styling för raderingsknappen */
+.delete-button {
+    padding: 6px 12px;
+    background-color: #d9534f;
+    color: #ffffff; 
+    font-size: 0.95em;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 12px; 
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+}
+
+@media (max-width: 600px) {
+    /* För body */
+    body {
+        font-size: 0.9em;
+    }
+
+    /* För header */
+    header {
+        font-size: 1.3em;
+        padding: 10px 0;
+    }
+
+    /* För main */
+    main {
+        width: 100%;
+        padding: 18px;
+    }
+
+    /* För sektioner */
+    section {
+        max-width: 100%;
+    }
+
+    /* För navigationsmeny */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 12px 0;
+    }
+
+    /* För rubriker */
+    h1 {
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    /* För footer */
+    footer {
+        font-size: 0.9em;
+        padding: 10px 0;
+    }
+
+    /* För arbetserfarenhet listan */
+    ul#work-experience-list li {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    /* För formuläret */
+    form#add-experience-form {
+        padding: 18px;
+        width: 90%;
+    }
+
+    form#add-experience-form input[type="text"],
+    form#add-experience-form input[type="date"],
+    form#add-experience-form textarea {
+        font-size: 0.9em;
+        padding: 9px;
+    }
+
+    form#add-experience-form button {
+        padding: 9px;
+        font-size: 1em;
+    }
+
+    /* För fel- och bekräftelsemeddelanden */
+    #error-message, #success-message {
+        font-size: 0.9em;
+    }
+
+    /* För raderingsknappen */
+    .delete-button {
+        padding: 5px 10px;
+        font-size: 0.85em;
+    }
+}
+
