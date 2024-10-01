@@ -21,6 +21,54 @@
     </header>
     <main>
         <h1>Om webbplatsen</h1>
+        <section>
+            <h2>Uppgift</h2>
+            <p>
+                Denna webbplats ingår i moment 3.2 steg 2 i kursen DT207G och är en fortsättning på moment 3.2 steg 1 där vi skapade en egen webbtjänst som hanterar arbetserfarenheter. 
+                Webbtjänsten låter användaren spara information om arbetsplatser, roller, arbetsperioder och arbetsbeskrivningar. Datan i webbtjänsten är fiktiv och fungerar som testdata för att simulera en riktig applikation.
+                I detta moment har jag arbetat med en NoSQL-databas genom MongoDB Atlas, vilket är en cloud-hostad databaslösning som möjliggör enkel hantering och skalbarhet.
+                Det har varit intressant att jämföra arbetet med en NoSQL-databas mot den relationsdatabas (PostgreSQL) som användes i tidigare moment.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Sidor</h2>
+            <p>
+                Webbplatsen konsumerar den webbtjänst som skapades i moment 3.1, och består av tre huvudsidor:
+            </p>
+            <ul>
+                <li>
+                    <strong>Startsida:</strong> Här visas alla arbetserfarenheter i en lista, där varje post presenteras i ett block. Användaren kan radera en specifik arbetserfarenhet direkt från startsidan om så önskas.
+                </li>
+                <li>
+                    <strong>Lägg till:</strong> En sida där användaren kan fylla i ett formulär för att lägga till nya arbetserfarenheter till webbtjänsten.
+                </li>
+                <li>
+                    <strong>Om:</strong> En informationssida som beskriver webbplatsen, dess syfte och tekniska implementation.
+                </li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Utvecklingsmiljö</h2>
+            <p>
+                Webbplatsen är skapad med hjälp av HTML, CSS och JavaScript samt använder Parcel för en automatiserad utvecklingsmiljö. 
+                Projektet är versionshanterat via GitHub, vilket gör det möjligt att spåra och dokumentera varje steg i utvecklingen genom commits och branches.
+                För att interagera med webbtjänsten har jag använt Fetch API för att utföra GET-, POST- och DELETE-anrop. Detta möjliggör hämtning, tillägg och borttagning av arbetserfarenheter via webbplatsen i realtid.
+                I detta moment använder jag MongoDB Atlas som databas, vilket är en cloudbaserad NoSQL-lösning. Databasen hanterar JSON-liknande dokument och är anpassad för snabb och flexibel datahantering utan att behöva 
+                förhålla sig till den mer strikta strukturen av relationsdatabaser. MongoDB Atlas har också gjort det smidigt att skala applikationen och testa med fiktiv data.
+            </p>
+        </section>
+        
+        <section>
+            <h2>Slutsatser</h2>
+            <p>
+                Arbetet med detta moment har varit väldigt lärorikt och roligt. Att övergå från en relationsdatabas (PostgreSQL) till en NoSQL-databas (MongoDB Atlas) har gett 
+                mig insikt i hur dessa olika typer av databaser hanterar data på olika sätt. MongoDB Atlas erbjuder en mer flexibel struktur som passar bra för att snabbt lägga till eller ändra data.
+                Denna uppgiften har gett mig en bra grund för att förstå skillnaderna mellan SQL och NoSQL och jag ser fram emot att arbeta mer med NoSQL-databaser i framtiden.
+            </p>
+        </section>
+        
     </main>
 
     <footer>
