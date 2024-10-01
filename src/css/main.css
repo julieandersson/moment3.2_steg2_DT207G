@@ -6,7 +6,7 @@
 
 /* Allmän styling */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     background-color: #f2f2f2;
     color: #333;
@@ -42,7 +42,7 @@ section {
 }
 
 section p {
-    font-family: 'Georgia', serif;
+    font-family: "Montserrat", sans-serif;
     text-align: justify;
     margin: 12px 0;
     max-width: 80ch;
